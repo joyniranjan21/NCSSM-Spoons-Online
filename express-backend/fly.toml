@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for ncssm-spoons-online on 2026-03-16T20:55:55Z
+# fly.toml app configuration file generated for express-backend on 2026-03-16T21:17:40Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'ncssm-spoons-online'
-primary_region = 'ams'
+app = 'express-backend'
+primary_region = 'ord'
 
 [build]
 
