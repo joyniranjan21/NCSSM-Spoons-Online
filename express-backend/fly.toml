@@ -1,21 +1,23 @@
-# fly.toml app configuration file generated for express-backend on 2024-01-19T13:12:37-05:00
+# fly.toml app configuration file generated for ncssm-spoons-online on 2026-03-16T20:55:55Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-app = "express-backend"
-primary_region = "iad"
+app = 'ncssm-spoons-online'
+primary_region = 'ams'
 
 [build]
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
-  cpu_kind = "shared"
+  memory = '1gb'
+  cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024
+  memory_mb = 256
